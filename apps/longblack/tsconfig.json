@@ -1,0 +1,65 @@
+{
+  "include": [
+    "types/env.d.ts",
+    "**/*.ts",
+    "**/*.tsx", "server.mjs",
+  ],
+  "ts-node": {
+		"swc": true
+	},
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2022"
+    ],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+		"moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "target": "ESNext",
+    "strict": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./app/*"
+      ],
+      "@gospel/ui/*": [
+        "../../packages/ui/src/*"
+      ],
+      "@gospel/ui": [
+        "../../packages/ui/src/index"
+      ],
+      "@gospel/business/*": [
+        "../../packages/business/src/*"
+      ],
+      "@gospel/business": [
+        "../../packages/business/src/index"
+      ],
+      "@gospel/database/*": [
+        "../../packages/database/src/*"
+      ],
+      "@gospel/database": [
+        "../../packages/database/src/index"
+      ],
+      "@gospel/internal-nobuild": [
+        "../../packages/internal-nobuild/src/index"
+      ],
+      "@gospel/internal-nobuild/*": [
+        "../../packages/internal-nobuild/src/*"
+      ],
+      "@gospel/tailwind-config": [
+        "../../config/tailwind-config/src/index"
+      ],
+    },
+    "noEmit": true
+  }
+}

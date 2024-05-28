@@ -1,0 +1,11 @@
+{
+  "extends": "@gospel/tsconfig/node18.json",
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tsup.config.ts"],
+  "compilerOptions": {
+    "paths": {
+      "@gospel/database/*": ["../database/src/*"],
+      "@gospel/database": ["../database/src/index"],
+    }
+  },
+  "exclude": ["node_modules"]
+}
