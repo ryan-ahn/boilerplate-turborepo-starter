@@ -1,5 +1,5 @@
 {
-  "name": "longblack-service",
+  "name": "boilerplate-turborepo-",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -22,12 +22,13 @@
     "@types/glob": "8.1.0",
     "glob": "^10.3.12",
     "json5": "^2.2.3",
-    "magicast": "^0.3.4",
-    "prettier": "^3.1.1",
-    "prettier-plugin-tailwindcss": "^0.5.14",
     "replace-in-file": "^7.1.0",
     "turbo": "^1.13.2",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.14"
   },
   "packageManager": "pnpm@9.1.2"
 }
