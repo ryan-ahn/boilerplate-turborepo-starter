@@ -1,34 +1,38 @@
 {
-  "name": "boilerplate-turborepo-",
+  "name": "boilerplate-turborepo-starter",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
-    "dev": "turbo run dev",
-    "test": "turbo run test",
-    "build": "turbo run build",
-    "clean": "turbo run clean",
-    "generate": "turbo run generate",
-    "lint": "turbo run lint",
-    "start": "turbo run start",
-    "start-remix-production": "pnpm run --filter @gospel/remix-app start"
-  },
-  "dependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
-    "@remix-run/dev": "2.9.2",
-    "@turbo/gen": "^1.13.2",
-    "@types/glob": "8.1.0",
-    "glob": "^10.3.12",
-    "json5": "^2.2.3",
-    "replace-in-file": "^7.1.0",
-    "turbo": "^1.13.2",
-    "typescript": "^5.4.5"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "pnpm lint:editorconfig && pnpm lint:prettier && turbo lint",
+    "lint:cache": "pnpm lint:editorconfig && pnpm lint:prettier && turbo lint:cache",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint:prettier": "prettier --check \"**/*.{ts,tsx,md}\"",
+    "format": "pnpm format:prettier",
+    "format:prettier": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "test": "turbo test",
+    "test:update": "vitest test -u",
+    "test:coverage": "vitest run --coverage",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "prettier": "^3.1.1",
-    "prettier-plugin-tailwindcss": "^0.5.14"
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@vitest/coverage-v8": "^2.0.0",
+    "editorconfig-checker": "^5.1.8",
+    "husky": "^9.0.11",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "turbo": "^2.1.2",
+    "typescript": "^5.4.5",
+    "vitest": "^2.1.1"
   },
-  "packageManager": "pnpm@9.1.2"
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.10.0",
+  "pnpm": {
+    "patchedDependencies": {
+      "vaul@0.9.1": "patches/vaul@0.9.1.patch"
+    }
+  }
 }
