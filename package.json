@@ -29,10 +29,5 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@9.10.0",
-  "pnpm": {
-    "patchedDependencies": {
-      "vaul@0.9.1": "patches/vaul@0.9.1.patch"
-    }
-  }
+  "packageManager": "pnpm@9.10.0"
 }
