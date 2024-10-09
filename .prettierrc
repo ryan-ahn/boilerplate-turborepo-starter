@@ -8,17 +8,10 @@
   "importOrder": [
     "^(remix/(.*)$)|^(remix$)",
     "<THIRD_PARTY_MODULES>",
-    "",
-    "^@gospel/(.*)$",
-    "",
-    "^~/utils/(.*)$",
-    "^~/components/(.*)$",
     "^~/(.*)$",
     "^[./]"
   ],
-  "importOrderParserPlugins": [
-    "typescript",
-    "jsx",
-    "decorators-legacy"
-  ]
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "tailwindFunctions": ["cn", "cva"],
+  "endOfLine": "lf"
 }
