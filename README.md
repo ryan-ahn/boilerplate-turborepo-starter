@@ -10,9 +10,9 @@
 - [x] ⚙️&nbsp;&nbsp;Small & Fast Bundler (Vite)
 - [x] 🗝️&nbsp;&nbsp;Typed Programming (TypeScript)
 - [x] 🗄️&nbsp;&nbsp;Database Design (Drizzle)
-- [x] 📙&nbsp;&nbsp;Strict Codebase (ESLint & Prettier)
-- [x] 🧪&nbsp;&nbsp;Component Test (Vitest)
-- [x] 📊&nbsp;&nbsp;Test Coverage Measurement (Vitest)
+- [x] 📙&nbsp;&nbsp;Linting and Formatting (ESLint & Prettier)
+- [x] 🧪&nbsp;&nbsp;Automated Testing of Components and Services (Vitest)
+- [x] 📊&nbsp;&nbsp;Automated Test Coverage Measurement (Vitest)
 - [x] 🎨&nbsp;&nbsp;Design Token System (Tailwind)
 - [x] 🧵&nbsp;&nbsp;Built-in Component & Layouts
 - [x] 📍&nbsp;&nbsp;Absolute Paths
