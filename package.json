@@ -11,7 +11,7 @@
     "prepare": "husky",
     "lint": "pnpm lint:editorconfig && pnpm pnpm lint:prettier && turbo lint",
     "lint:cache": "pnpm lint:editorconfig && pnpm pnpm lint:prettier && turbo lint:cache",
-    "lint:editorconfig": "editorconfig-checker",
+    "lint:editorconfig": "ec",
     "lint:prettier": "prettier --check \"**/*.{ts,tsx,md}\"",
     "format": "pnpm format:prettier",
     "format:prettier": "prettier --write \"**/*.{ts,tsx,md}\"",
