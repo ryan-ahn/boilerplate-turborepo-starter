@@ -12,6 +12,6 @@
     "^[./]"
   ],
   "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
-  "tailwindFunctions": ["cn", "cva"],
+  "tailwindFunctions": ["cn", "tv"],
   "endOfLine": "lf"
 }
