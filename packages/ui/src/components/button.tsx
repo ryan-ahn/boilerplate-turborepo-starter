@@ -1,31 +1,32 @@
 import { Button, ButtonProps, cn, tv } from "@nextui-org/react";
 
+export type ButtonVariant = "solid" | "bordered";
+export type ButtonRounded = "none" | "sm" | "md" | "lg" | "full";
+export type ButtonSize = "sm" | "md" | "lg";
+export type ButtonColor = "default" | "primary";
+
 const button = tv({
   base: "rounded-none font-medium",
   variants: {
     variant: {
       solid: "",
       bordered: "border-1 bg-background",
-      light: "text-foreground bg-transparent",
     },
     rounded: {
       none: "",
-      small: "rounded-small",
-      medium: "rounded-medium",
-      large: "rounded-large",
+      sm: "rounded-sm",
+      md: "rounded-md",
+      lg: "rounded-lg",
+      full: "rounded-full",
     },
     size: {
-      sm: "text-small",
-      md: "text-small font-bold",
-      lg: "text-medium h-14 px-4 py-3 font-bold",
+      sm: "text-sm",
+      md: "text-sm font-bold",
+      lg: "text-md h-14 px-4 py-3 font-bold",
     },
     color: {
-      primary: "bg-primary",
-      secondary: "bg-secondary",
-      danger: "bg-danger",
-      warning: "bg-warning",
-      success: "bg-success",
       default: "bg-background",
+      primary: "bg-primary",
     },
   },
   compoundVariants: [
@@ -43,11 +44,6 @@ const button = tv({
       variant: ["bordered"],
       color: ["primary"],
       className: "border-primary-300 text-primary",
-    },
-    {
-      variant: ["bordered"],
-      color: ["secondary"],
-      className: "border-secondary-300 text-secondary",
     },
   ],
   defaultVariants: {
@@ -70,10 +66,10 @@ export const ButtonV1 = ({
   ...rest
 }: {
   className?: string;
-  variant?: "solid" | "bordered" | "light";
-  rounded?: "none" | "small" | "medium" | "large";
-  size?: "sm" | "md" | "lg";
-  color?: "default" | "primary" | "secondary";
+  variant?: ButtonVariant;
+  rounded?: ButtonRounded;
+  size?: ButtonSize;
+  color?: ButtonColor;
   as?: React.RefAttributes<HTMLAnchorElement>;
   to?: string;
   children: React.ReactNode;

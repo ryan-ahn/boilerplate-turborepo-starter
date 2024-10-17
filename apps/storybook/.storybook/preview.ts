@@ -1,5 +1,6 @@
 import { withThemeByClassName } from "@storybook/addon-themes";
 import type { Preview, ReactRenderer } from "@storybook/react";
+
 import "@repo/tailwind-config/tailwind.css";
 
 const preview: Preview = {
