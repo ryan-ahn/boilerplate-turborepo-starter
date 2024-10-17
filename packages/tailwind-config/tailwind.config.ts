@@ -80,7 +80,6 @@ const unit = {
 const fontFamily = {
   sans: [
     "Noto Sans KR",
-    "Pretendard",
     "-apple-system",
     "BlinkMacSystemFont",
     "system-ui",

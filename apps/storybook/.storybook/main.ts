@@ -1,5 +1,5 @@
-import { dirname, join } from "path";
 import type { StorybookConfig } from "@storybook/react-vite";
+import { dirname, join } from "path";
 import { mergeConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
