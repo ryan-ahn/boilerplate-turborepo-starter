@@ -1,7 +1,7 @@
 import { Button, ButtonProps, cn, tv } from "@nextui-org/react";
 
 export type ButtonVariant = "solid" | "bordered";
-export type ButtonRounded = "none" | "sm" | "md" | "lg" | "full";
+export type ButtonRounded = "none" | "tn" | "sm" | "md" | "lg" | "full";
 export type ButtonSize = "sm" | "md" | "lg";
 export type ButtonColor = "default" | "primary";
 
@@ -14,6 +14,7 @@ const button = tv({
     },
     rounded: {
       none: "",
+      tn: "rounded-tn",
       sm: "rounded-sm",
       md: "rounded-md",
       lg: "rounded-lg",
