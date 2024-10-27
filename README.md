@@ -15,6 +15,78 @@
 - [x] 📊&nbsp;&nbsp;Automated Test Coverage Measurement (Vitest)
 - [x] 📚&nbsp;&nbsp;Component Documentation (Storybook)
 - [x] 🎨&nbsp;&nbsp;Design Token System (Tailwind)
+- [x] 🪄&nbsp;&nbsp;Dark Mode (NextUi + Tailwind)
 - [x] 🧵&nbsp;&nbsp;Built-in Component & Layouts
 - [x] 📍&nbsp;&nbsp;Absolute Paths
 - [x] 📫&nbsp;&nbsp;Page SEO
+
+## Frameworks
+
+- **Package Manager** : pnpm
+- **Bundler** : vite
+- **Monorepo System** : turborepo
+- **UI Library** : nextui
+- **Database ORM** : drizzle
+- **Testing Framework** : vitest
+- **Component Documentation** : storybook
+- **Styling** : tailwind css
+
+## Getting Started
+
+### 1) Install Dependencies
+
+```shell
+pnpm install
+```
+
+### 2) Run the Development Server
+
+```shell
+pnpm run dev
+```
+
+### 3) Run the Storybook Server
+
+```shell
+pnpm run storybook
+```
+
+### 4) Run the Automated Deployment
+
+```shell
+git push
+```
+
+### 5) Run the Tests
+
+```shell
+pnpm test
+```
+
+### 6) Run the Tests with Coverage
+
+```shell
+pnpm test:coverage
+```
+
+### 7) Run the Linter
+
+```shell
+pnpm lint
+```
+
+## Add to New Repository
+
+### 1) Nextjs App
+
+```shell
+cd apps
+// TODO: Add command
+```
+
+## Create New Package
+
+```shell
+cd packages
+// TODO: Add command
+```
